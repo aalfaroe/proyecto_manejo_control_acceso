@@ -1,6 +1,19 @@
--name: Actualizar servidores
+-name: Ejecucion del update en Ubuntu
  apt:
-   name: "*"
-   state: latest
+   update_cache: yes
  become: true
  when: ansible_os_family == "Debian"
+
+ -name: Actualizar servidores
+  apt:
+    name: "*"
+    state: latest
+  become: true
+  when: ansible_os_family == "Debian"
+
+-name:  Ejecucion update-upgrade en centos
+ yum:
+   name: '*'
+   state: latest
+ become: true
+ when: ansible_os_family == "RedHat"   
