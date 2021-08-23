@@ -1,2 +1,6 @@
----
-# tasks file for server-update
+-name: Actualizar servidores
+ apt:
+   name: "*"
+   state: latest
+ become: true
+ when: ansible_os_family == "Debian"
