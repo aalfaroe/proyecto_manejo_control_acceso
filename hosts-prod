@@ -1,0 +1,2 @@
+prod-ubuntu ansible_host=20.98.41.237 ansible_connection=ssh ansible_ssh_pass=Marjorie1966/ ansible_user=aalfaroe
+prod-centos ansible_host=20.80.55.74 ansible_connection=ssh ansible_ssh_pass=Marjorie1966/ ansible_user=aalfaroe

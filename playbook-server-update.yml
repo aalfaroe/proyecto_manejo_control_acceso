@@ -1,0 +1,5 @@
+-
+  name: Acutlizacion de servidores
+  host: all
+  roles:
+    - server-update
