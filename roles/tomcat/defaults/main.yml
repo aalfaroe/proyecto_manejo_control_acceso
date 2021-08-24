@@ -1,2 +1,2 @@
----
-# defaults file for tomcat
+tomcat_archive_url: https://dlcdn.apache.org/tomcat-9/v9.0.52/bin/apache-tomcat-9.0.52.tar.gz
+tomcat_archive_dest: /tmp/apache-tomcat-9.0.52.tar.gz
