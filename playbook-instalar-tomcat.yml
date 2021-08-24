@@ -1,0 +1,5 @@
+-
+  name: Instalar Tomcat en CentOs
+  host: all
+  roles:
+    - tomcat 
