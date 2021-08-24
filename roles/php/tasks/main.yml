@@ -14,4 +14,11 @@
   ansible.builtin.command: apt install php8.0 libapache2-mod-php8.8 -y
   become: true
   when: ansible_os_family == "Debian"
- 
+
+
+-name: Reiniciando apache httpd
+ ansible.builtin.service:
+   name: apache2
+   state: restarted
+ become: true
+ when: ansible_os_family == "Debian"
